@@ -1,0 +1,17 @@
+{
+  "cxxNamespace": ["silencelaboratories_reactnativesecurekey"],
+  "ios": {
+    "iosModuleName": "ReactNativeSecureKey"
+  },
+  "android": {
+    "androidNamespace": ["silencelaboratories","reactnativesecurekey"],
+    "androidCxxLibName": "silencelaboratories_reactnativesecurekey"
+  },
+  "autolinking": {
+    "ReactNativeSecureKey": {
+      "swift": "ReactNativeSecureKey",
+      "kotlin": "ReactNativeSecureKey"
+    }
+  },
+  "ignorePaths": ["node_modules"]
+}
