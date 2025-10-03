@@ -10,11 +10,13 @@
     "build:ios": "react-native build-ios --mode Debug"
   },
   "dependencies": {
-    "@react-native/new-app-screen": "0.81.1",
+    "@silencelaboratories/dkls-sdk": "^2.3.0",
+    "@silencelaboratories/schnorr-sdk": "^2.3.0",
+    "@silencelaboratories/silent-shard-sdk": "^2.2.2",
+    "js-base64": "^3.7.8",
     "react": "19.1.0",
     "react-native": "0.81.1",
-    "react-native-nitro-modules": "^0.29.6",
-    "react-native-safe-area-context": "^5.5.2"
+    "react-native-nitro-modules": "^0.29.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
