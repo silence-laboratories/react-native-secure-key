@@ -1,7 +1,7 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import * as SecureKey from '@silencelaboratories/react-native-secure-key';
-import { encode } from 'js-base64';
+import { Base64, encode } from 'js-base64';
 
 const KEY_ALIAS = 'my-key';
 
@@ -19,7 +19,11 @@ export default function App() {
 
     const messageSigner = SecureKey.createMessageSigner(KEY_ALIAS);
     const signature2 = await messageSigner.sign(encode(message));
-    console.log('Signature2 bytes:', signature2);
+    console.log(
+      'Signature2 bytes:',
+      signature2,
+      Base64.toUint8Array(signature2).length
+    );
 
     SecureKey.deleteSecureKey(KEY_ALIAS);
 

@@ -10,8 +10,14 @@
   },
   "autolinking": {
     "ReactNativeSecureKey": {
-      "swift": "ReactNativeSecureKey",
-      "kotlin": "ReactNativeSecureKey"
+      "ios": {
+        "language": "swift",
+        "implementationClassName": "ReactNativeSecureKey"
+      },
+      "android": {
+        "language": "kotlin",
+        "implementationClassName": "ReactNativeSecureKey"
+      }
     }
   },
   "ignorePaths": ["node_modules"]
