@@ -10,3 +10,4 @@ module.exports = getConfig(
   },
   { root, pkg }
 );
+
